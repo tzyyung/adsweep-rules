@@ -1,0 +1,10 @@
+{
+  "packageName": "com.realbyteapps.moneymanagerfree",
+  "appName": "Money Manager",
+  "testedVersions": ["4.10.8"],
+  "testedAndroid": ["API 34"],
+  "status": "verified",
+  "author": "tzyyung",
+  "lastUpdated": "2026-04-06",
+  "notes": "Split APK required for installation"
+}
