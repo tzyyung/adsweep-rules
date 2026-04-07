@@ -5,6 +5,9 @@ on:
     - cron: '0 3 * * 1'  # Every Monday at 03:00 UTC
   workflow_dispatch:       # Manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   update-domains:
     runs-on: ubuntu-latest
