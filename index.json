@@ -13,7 +13,12 @@
   },
   "domains": {
     "url": "domains/adsweep_domains.txt",
-    "count": 99449,
-    "sources": ["AdGuard Base", "EasyList", "EasyPrivacy", "Peter Lowe"]
+    "count": 97331,
+    "sources": [
+      "AdGuard Base",
+      "EasyList",
+      "EasyPrivacy",
+      "Peter Lowe"
+    ]
   }
 }
