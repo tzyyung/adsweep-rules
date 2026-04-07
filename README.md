@@ -1,18 +1,46 @@
 # AdSweep Rules Repository
 
-Community-maintained hook rules for [AdSweep](https://github.com/tzyyung/AdSweep).
+Community-maintained hook rules and domain blocklist for [AdSweep](https://github.com/tzyyung/AdSweep).
+
+## Structure
+
+```
+adsweep-rules/
+├── index.json                          # App index + domain list metadata
+├── domains/
+│   └── adsweep_domains.txt             # 99,000+ ad domains (auto-updated weekly)
+├── apps/
+│   └── com.realbyteapps.moneymanagerfree/
+│       ├── rules.json                  # App-specific hook rules
+│       └── metadata.json              # Version, author, status
+└── .github/workflows/
+    └── update-domains.yml              # Weekly domain list sync
+```
 
 ## Usage
 
 ```bash
-# Auto-download rules for your APK
+# Auto-download rules + latest domain list for your APK
 python inject.py --apk target.apk --rules-url auto
 
 # Or specify this repo explicitly
 python inject.py --apk target.apk --rules-url https://raw.githubusercontent.com/tzyyung/adsweep-rules/main
 ```
 
-## Available Rules
+Manager App 在 PATCH 時也會自動從此 repo 下載 app rules 和最新域名清單。
+
+## Domain Blocklist
+
+`domains/adsweep_domains.txt` contains 99,000+ ad/tracking domains, aggregated from:
+
+- **AdGuard Base Filter** (~60,000 rules)
+- **EasyList** (~90,000 rules)
+- **EasyPrivacy** (~30,000 rules)
+- **Peter Lowe's List** (~3,000 domains)
+
+Domain list is auto-updated weekly via GitHub Actions.
+
+## Available App Rules
 
 | App | Package | Hooks | Status | Version |
 |-----|---------|-------|--------|---------|
