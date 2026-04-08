@@ -1,6 +1,10 @@
 {
-  "version": 2,
-  "updated": "2026-04-07",
+  "version": 3,
+  "updated": "2026-04-08",
+  "common": {
+    "rulesUrl": "rules/common.json",
+    "rulesVersion": 1
+  },
   "apps": {
     "com.realbyteapps.moneymanagerfree": {
       "name": "Money Manager",
@@ -9,16 +13,27 @@
       "status": "verified",
       "hookCount": 9,
       "author": "tzyyung"
+    },
+    "com.accuweather.android": {
+      "name": "AccuWeather",
+      "rulesUrl": "apps/com.accuweather.android/rules.json",
+      "testedVersion": "19.0.2",
+      "status": "verified",
+      "hookCount": 5,
+      "author": "tzyyung"
+    }
+  },
+  "userscripts": {
+    "google_ads_webview": {
+      "url": "userscripts/google_ads_webview.user.js",
+      "version": "1.1",
+      "description": "Block Google Ads in WebView-based hybrid apps"
     }
   },
   "domains": {
     "url": "domains/adsweep_domains.txt",
     "count": 97331,
-    "sources": [
-      "AdGuard Base",
-      "EasyList",
-      "EasyPrivacy",
-      "Peter Lowe"
-    ]
+    "version": 2,
+    "sources": ["AdGuard Base", "EasyList", "EasyPrivacy", "Peter Lowe"]
   }
 }
