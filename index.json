@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated": "2026-04-08",
   "common": {
     "rulesUrl": "rules/common.json",
@@ -24,10 +24,15 @@
     }
   },
   "userscripts": {
+    "google_ads_css": {
+      "url": "userscripts/google_ads_css.user.js",
+      "version": "1.0",
+      "description": "CSS-only ad hider (document-start, anti-flicker)"
+    },
     "google_ads_webview": {
       "url": "userscripts/google_ads_webview.user.js",
-      "version": "1.1",
-      "description": "Block Google Ads in WebView-based hybrid apps"
+      "version": "1.2",
+      "description": "DOM cleanup + MutationObserver + fetch interception (document-end)"
     }
   },
   "domains": {
