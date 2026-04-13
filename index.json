@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "updated": "2026-04-08",
+  "updated": "2026-04-13",
   "common": {
     "rulesUrl": "rules/common.json",
     "rulesVersion": 1
@@ -37,8 +37,13 @@
   },
   "domains": {
     "url": "domains/adsweep_domains.txt",
-    "count": 97331,
+    "count": 98861,
     "version": 2,
-    "sources": ["AdGuard Base", "EasyList", "EasyPrivacy", "Peter Lowe"]
+    "sources": [
+      "AdGuard Base",
+      "EasyList",
+      "EasyPrivacy",
+      "Peter Lowe"
+    ]
   }
 }
