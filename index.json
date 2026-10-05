@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "common": {
     "rulesUrl": "rules/common.json",
     "rulesVersion": 1
@@ -37,7 +37,7 @@
   },
   "domains": {
     "url": "domains/adsweep_domains.txt",
-    "count": 87101,
+    "count": 89300,
     "version": 2,
     "sources": [
       "AdGuard Base",
